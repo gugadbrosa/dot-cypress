@@ -1,9 +1,10 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require("cypress")
 
 module.exports = defineConfig({
+  blockHosts: ["https://events.backtrace.io"],
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    viewportWidth: 1400,
+    viewportHeight: 900,
+    //baseUrl: "https://www.saucedemo.com/",
   },
-});
+})

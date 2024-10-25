@@ -1,4 +1,4 @@
-name: Cypress Tests
+name: e2e
 
 on:
   push:
@@ -19,10 +19,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
 
       - name: Run Cypress tests
-        run: npx cypress run
+        run: npm test
