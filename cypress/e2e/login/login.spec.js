@@ -7,7 +7,7 @@ describe("Login", () => {
     cy.visit("/")
   })
 
-  //Esse teste deveria ser realizado a nível de teste unitário, pois ele verifica atributos básicos dos elementos da interface e essas validações não dependem de interações completas ou interface, sendo muito mais baratas para a CI/CD se implementados no nível de teste unitário. Realizei como e2e só para propósitos de demonstração.
+  //Esse teste deveria ser realizado a nível de teste unitário, pois ele verifica atributos básicos dos elementos da interface e essas validações não dependem de interações completas ou interface, sendo muito mais baratas para a CI/CD se implementados no nível de teste unitário. Realizei como e2e para demonstração.
   it("validates Login form fields", () => {
     cy.get("#user-name")
       .should("be.visible")

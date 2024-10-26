@@ -1,7 +1,10 @@
+const username = Cypress.env("username")
+const password = Cypress.env("password")
+
 const loginData = [
   {
-    username: "standard_user",
-    password: "secret_sauce",
+    username: username,
+    password: password,
     errorMessage: "",
     resultURL: "/inventory.html",
     success: true,
@@ -17,7 +20,7 @@ const loginData = [
     description: "Negative case: invalid credentials",
   },
   {
-    username: "standard_user",
+    username: username,
     password: "wrong_password",
     errorMessage:
       "Epic sadface: Username and password do not match any user in this service",
@@ -27,14 +30,14 @@ const loginData = [
   },
   {
     username: "",
-    password: "secret_sauce",
+    password: password,
     errorMessage: "Epic sadface: Username is required",
     resultURL: "/",
     success: false,
     description: "Negative case: empty username",
   },
   {
-    username: "standard_user",
+    username: username,
     password: "",
     errorMessage: "Epic sadface: Password is required",
     resultURL: "/",
