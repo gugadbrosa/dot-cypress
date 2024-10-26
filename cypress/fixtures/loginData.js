@@ -14,7 +14,7 @@ const loginData = [
       "Epic sadface: Username and password do not match any user in this service",
     resultURL: "/",
     success: false,
-    description: "Negative case: wrong credentials",
+    description: "Negative case: invalid credentials",
   },
   {
     username: "standard_user",
