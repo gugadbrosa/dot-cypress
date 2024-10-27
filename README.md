@@ -6,6 +6,7 @@ This is an evaluation from a technical challenge
 
 Code is sctructured as shown below:
 
+```
 ├── cypress
 │   ├── e2e
 │   │   ├── cart
@@ -21,12 +22,12 @@ Code is sctructured as shown below:
 │   └── support
 │   ├── commands.js
 │   └── e2e.js
-
+```
 ## Running locally
 
-    - Clone the repo
-    - Run `npm install`
-    - Run `npm test`
+- Clone the repo
+- Run `npm install`
+- Run `npm test`
 
 ## CI
 
